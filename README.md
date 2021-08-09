@@ -28,3 +28,4 @@ mute role.
 
 ## How the bot works:
 If any member of the server sends more than 5 messages in 5 seconds, they'll receive the configured muted role
+and after the set amount of time it will be removed so that users can send messages again.
