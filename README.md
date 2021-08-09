@@ -18,9 +18,13 @@ In `config.py` set the bot's `TOKEN` and adjust any required variables
 In the discord server make a "mute role".
 Set permissions overwrites in all server's channels so that users with it cannot send messages 
 (and any other overwrites desired)
+Add the id of said role to `config.MUTE_ROLE_ID`
+
+**Ensure the bot has admin permissions or manage_roles and manage_members** and that the bot's role is higher than the 
+mute role.
 
 ## Running the bot
 `python main.py`
 
 ## How the bot works:
-If any member of the server sends more than 5 messages in 5 seconds, they'll receive 
+If any member of the server sends more than 5 messages in 5 seconds, they'll receive the configured muted role
